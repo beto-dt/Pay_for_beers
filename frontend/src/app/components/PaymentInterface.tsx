@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react';
 
 interface Friend {
@@ -26,7 +27,7 @@ export default function PaymentInterface() {
 
   return (
     <div className="max-w-lg mx-auto my-10 p-6 shadow-md rounded-lg border border-gray-200 bg-white">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">Interfaz de Pago</h2>
+      <h2 className="text-2xl font-bold mb-4 text-gray-800">Pago</h2>
 
       <div className="mb-4">
         <label htmlFor="friends" className="block text-sm font-medium text-gray-700 mb-2">
