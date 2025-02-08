@@ -78,7 +78,11 @@ El sistema sigue una estructura modular para mantener la claridad y facilitar el
 
        pip3 install -r requirements.txt
 
-3. **Ejecutar pruebas:** :
+3. **Ejecutar pruebas:** Usa `pytest` para verificar que todo esté funcionando correctamente:
+    
+       pytest
+
+4. **Ejecutar pruebas:** :
 
         uvicorn backend.app.main:app --reload
 
