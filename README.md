@@ -1,15 +1,17 @@
 # Backend - Python
+
 # Pay_for_beers
 
 ### 🚀 Funcionalidad Principal
 
-El  objetivo es generar 5 endpoint : 
-   - Listar la cerveza disponible
-   - Listar amigos
-   - Recibir una orden 
-   - Obtener la cuenta
-   - Pagar la cuenta. La cuenta puede dividirse entre los 3 amigos por igual. Este
-endpoint también debe permitirle a cada uno pagar lo que ordenó
+El objetivo es generar 5 endpoint :
+
+- Listar la cerveza disponible
+- Listar amigos
+- Recibir una orden
+- Obtener la cuenta
+- Pagar la cuenta. La cuenta puede dividirse entre los 3 amigos por igual. Este
+  endpoint también debe permitirle a cada uno pagar lo que ordenó
 
 1. **Listar la cerveza disponible (`list_beer`)**:
 
@@ -32,6 +34,7 @@ endpoint también debe permitirle a cada uno pagar lo que ordenó
        - Se realiza  la simulacion de de pagar la cuenta donde si escogemos el split_equally true la cuenta se divide para 3 amigos en partes iguales y si es false solo sale la cuenta a pagar lo que consumio el amigo unicamente.
 
 ### 🛠️ Arquitectura
+
 El sistema sigue una estructura modular para mantener la claridad y facilitar el mantenimiento.
 
 1. **Components**:
@@ -65,7 +68,6 @@ El sistema sigue una estructura modular para mantener la claridad y facilitar el
        - Los datos del inventario (`stock_data`), el nombre del amigo (`friend_name`) y escoger  true si la cuenta es dividida para 3 en partes iguales o false si solo es por amigo (`split_equally`) se envían a al caso de uso 'pay_account'.
        - la respuesta simulada de lo que debe pagar dependienso si desea compartida o separada.
 
-
 ### 🔧 Instalación
 
 1. **Clonar el repositorio:**
@@ -76,11 +78,12 @@ El sistema sigue una estructura modular para mantener la claridad y facilitar el
 
        pip3 install -r requirements.txt
 
-3. **Ejecutar pruebas:** :  
- 
+3. **Ejecutar pruebas:** :
+
         uvicorn backend.app.main:app --reload
 
 # Frontend - NextJs
+
 # Pay_for_beers
 
 ### 🔧 Instalación
@@ -90,16 +93,16 @@ El sistema sigue una estructura modular para mantener la claridad y facilitar el
        git clone git@github.com:beto-dt/Pay_for_beers.git
        cd frontend
 
-2. **Instalar dependencias:** 
+2. **Instalar dependencias:**
 
        npm install
 
-4.  **Levantar proyecto:** :  
- 
-        npm run dev
+4. **Levantar proyecto:** :
+
+       npm run dev
 
 ### 🔧 Observaciones
-   
+
       Para poder levantar completamente el proyecto es necesario levantar el backend  y el frontend
 
       Creamos un archivo .env en la raiz del proyecto y su contenido debe ser 
