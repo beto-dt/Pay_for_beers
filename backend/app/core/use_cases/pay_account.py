@@ -2,8 +2,8 @@ from fastapi import HTTPException
 
 from backend.app.core.entities.stock import Stock
 
-def pay_account(stock:Stock,split_equally: bool, friend_name: str = None):
 
+def pay_account(stock: Stock, split_equally: bool, friend_name: str = None):
     if split_equally:
         total_account = sum(
             order.quantity * order.price for friend in stock.friends for order in friend.orders

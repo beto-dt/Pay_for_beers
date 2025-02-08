@@ -1,6 +1,8 @@
 from fastapi import HTTPException
 
 from backend.app.core.entities.stock import Stock
+
+
 def get_account(stock: Stock,friend_name: str):
     friend = next((f for f in stock.friends if f.name.lower() == friend_name.lower()), None)
     if not friend:
@@ -11,5 +13,5 @@ def get_account(stock: Stock,friend_name: str):
     return {
         "name": friend.name,
         "total_account": total_account,
-        "orders": friend.orders,  # Opcional: incluir pedidos para referencia
+        "orders": friend.orders,
     }

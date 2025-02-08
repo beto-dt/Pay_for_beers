@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from backend.app.core.entities.stock import Stock, Beer, Friend
 
 BASE_DATE = datetime(2024, 9, 10, 12, 0, 0)

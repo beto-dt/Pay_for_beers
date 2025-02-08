@@ -3,7 +3,7 @@ from backend.app.core.entities.stock import Stock
 def place_order(stock: Stock, friend_name: str, beer_name: str, quantity: int):
     friend = next((f for f in stock.friends if f.name == friend_name), None)
     if not friend:
-        raise ValueError(f"Friend '{friend_name}' not found.")  # Usa un tipo de excepción más adecuado
+        raise ValueError(f"Friend '{friend_name}' not found.")
 
     beer = next((b for b in stock.beers if b.name == beer_name), None)
     if not beer:
